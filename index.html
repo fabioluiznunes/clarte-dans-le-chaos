@@ -148,5 +148,37 @@
   }
 </style>
 
+
+<button onclick="toggleAudio()" id="toggle-audio-btn">🔇</button>
+<script>
+  const audio = document.getElementById('background-audio');
+  const btn = document.getElementById('toggle-audio-btn');
+
+  function toggleAudio() {
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = '🔇';
+    } else {
+      audio.pause();
+      btn.textContent = '🔊';
+    }
+  }
+</script>
+<style>
+  #toggle-audio-btn {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    z-index: 1001;
+    padding: 8px 12px;
+    font-size: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.85;
+  }
+</style>
+
 </body>
 </html>
