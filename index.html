@@ -1,142 +1,226 @@
-<!DOCTYPE html>
 
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Clarté dans le Chaos</title>
-<style>
+  <meta charset="UTF-8">
+  <title>Clarté dans le Chaos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
     body {
-      margin: 0;
+      background-color: #000;
+      color: #fff;
       font-family: 'Helvetica Neue', sans-serif;
-      background: #111;
-      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
     }
-    .frame {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .obra {
+      margin-bottom: 80px;
       text-align: center;
     }
-    .frame img {
-      max-width: 80vw;
-      max-height: 70vh;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+
+    .obra img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 24px rgba(255,255,255,0.2);
     }
-    .title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
+
+    .caption {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #ddd;
     }
-    .description {
-      font-size: 1.1rem;
-      color: #bbb;
-      max-width: 800px;
+
+    .caption strong {
+      display: block;
+      font-size: 18px;
+      color: #fff;
     }
-    .spacer {
-      height: 10vh;
+
+    .caption em {
+      font-style: italic;
+      color: #aaa;
+    }
+
+    audio {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      width: 250px;
+      opacity: 0.85;
+    }
+
+    #toggle-audio-btn {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      z-index: 1001;
+      padding: 8px 12px;
+      font-size: 20px;
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
-<div class="frame">
-<div class="title">Clarté dans le Chaos</div>
-<div class="description">Uma exposição visual sobre os estados emocionais da vida corporativa. Entre o rigor e o colapso, a esperança e o burnout.</div>
+
+<header style="text-align: center; padding: 120px 20px 60px; color: #fff;">
+  <h1 style="font-size: 36px; margin: 0; font-weight: bold;">Clarté dans le Chaos</h1>
+  <p style="font-size: 18px; margin-top: 10px; color: #ccc;">
+    Uma exposição visual dos estados emocionais da vida corporativa
+  </p>
+</header>
+<div style="height: 100vh;"></div>
+
+
+<div class="container">
+
+    <div class="obra">
+      <img src="expressionismo.png" alt="Slide Final">
+      <div class="caption">
+        <strong>Slide Final</strong>
+        A call terminou, mas a ansiedade continua.<br>
+        <em>Inspirado no expressionismo dramático.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="noir.png" alt="Blackout na Sala 5">
+      <div class="caption">
+        <strong>Blackout na Sala 5</strong>
+        Ninguém confia em ninguém. Mas todos compartilham o mesmo link do Excel.<br>
+        <em>Inspirado no cinema noir.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="futurismo.png" alt="Pivotar é Preciso">
+      <div class="caption">
+        <strong>Pivotar é Preciso</strong>
+        O futuro é neon, o KPI é incerto, o prazo era ontem.<br>
+        <em>Inspirado no futurismo retrô (synthwave).</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="barroco.png" alt="Sagrada Reunião">
+      <div class="caption">
+        <strong>Sagrada Reunião</strong>
+        Luz divina sobre PowerPoint. E uma planilha esperando por redenção.<br>
+        <em>Inspirado no barroco (Caravaggio).</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="naif.png" alt="Sonhos de Q3">
+      <div class="caption">
+        <strong>Sonhos de Q3</strong>
+        Tudo é colorido. Só o resultado que não.<br>
+        <em>Inspirado na arte naïf.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="pixelart.png" alt="Game Over, KPI">
+      <div class="caption">
+        <strong>Game Over, KPI</strong>
+        Os gráficos estão em 8-bit. O desespero é em tempo real.<br>
+        <em>Inspirado em pixel art anos 90.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="cartoon.png" alt="Tudo Bem na Reunião">
+      <div class="caption">
+        <strong>Tudo Bem na Reunião</strong>
+        O fundo é rosa, os olhos estão vazios, e a call é às 22h.<br>
+        <em>Inspirado em cartoon pastel.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="popart.png" alt="PowerPoint é Pop">
+      <div class="caption">
+        <strong>PowerPoint é Pop</strong>
+        Drama glamouroso com lágrima vetorial.<br>
+        <em>Inspirado na pop art publicitária.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="sovietico.png" alt="Plano Quinquenal de Sobrevivência">
+      <div class="caption">
+        <strong>Plano Quinquenal de Sobrevivência</strong>
+        Se o líder aponta para cima, o gráfico não pode cair.<br>
+        <em>Inspirado em pôster soviético.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="scrapbook.png" alt="Burnout com Glitter">
+      <div class="caption">
+        <strong>Burnout com Glitter</strong>
+        Corações colados, caos decorado.<br>
+        <em>Inspirado em scrapbook dos anos 2000.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="sitcom.png" alt="Reunião com Olhar para a Câmera">
+      <div class="caption">
+        <strong>Reunião com Olhar para a Câmera</strong>
+        Alguém engasgou com a planilha. Outro sorriu pra câmera invisível.<br>
+        <em>Inspirado em sitcom estilo The Office.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="infografico.png" alt="Painel de Emoções Corporativas">
+      <div class="caption">
+        <strong>Painel de Emoções Corporativas</strong>
+        O gráfico foge da página. A caixa de texto grita.<br>
+        <em>Inspirado em infográfico maluco.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="infantilmacabro.png" alt="O Estagiário Sabia">
+      <div class="caption">
+        <strong>O Estagiário Sabia</strong>
+        Um quadro sombrio para um quadro de metas.<br>
+        <em>Inspirado em livro infantil macabro.</em>
+      </div>
+    </div>
+    
+    <div class="obra">
+      <img src="reality.png" alt="Sob Pressão, com Excel">
+      <div class="caption">
+        <strong>Sob Pressão, com Excel</strong>
+        A tensão é real. O PowerPoint também.<br>
+        <em>Inspirado em pôster de reality show corporativo.</em>
+      </div>
+    </div>
+    
 </div>
-<div class="frame">
-<img alt="Expressionismo dramático" src="expressionismo.jpg"/>
-<div class="title">Expressionismo dramático</div>
-<div class="description">Traços vibrantes e desorganizados. Nada está claro, tudo é urgente.</div>
-</div>
-<div class="frame">
-<img alt="Noir corporativo" src="noir.jpg"/>
-<div class="title">Noir corporativo</div>
-<div class="description">Luz dura, silhuetas tensas. Ninguém confia em ninguém.</div>
-</div>
-<div class="frame">
-<img alt="Futurismo retro / synthwave" src="futurismo.jpg"/>
-<div class="title">Futurismo retro / synthwave</div>
-<div class="description">Slides piscam em neon. Alerta vermelho: "Reestruturação iminente".</div>
-</div>
-<div class="frame">
-<img alt="Barroco corporativo (Caravaggio)" src="barroco.jpg"/>
-<div class="title">Barroco corporativo (Caravaggio)</div>
-<div class="description">Clarão divino sobre PowerPoint 23.</div>
-</div>
-<div class="frame">
-<img alt="Naif corporativo" src="naif.jpg"/>
-<div class="title">Naif corporativo</div>
-<div class="description">Carinhas felizes, céu azul, tabelas assustadoras.</div>
-</div>
-<div class="frame">
-<img alt="Pixel art / game anos 90" src="pixelart.jpg"/>
-<div class="title">Pixel art / game anos 90</div>
-<div class="description">Vida real em modo "hardcore". KPI derretendo.</div>
-</div>
-<div class="frame">
-<img alt="Cartoon pastel" src="cartoon.jpg"/>
-<div class="title">Cartoon pastel</div>
-<div class="description">Tudo fofo. Tudo errado.</div>
-</div>
-<div class="frame">
-<img alt="Pop art publicitaria" src="popart.jpg"/>
-<div class="title">Pop art publicitária</div>
-<div class="description">Drama glamouroso. Close em lágrimas corporativas.</div>
-</div>
-<div class="frame">
-<img alt="Pôster soviético" src="sovietico.jpg"/>
-<div class="title">Pôster soviético</div>
-<div class="description">TRAVAIL. RIGUEUR. RÉSULTAT.</div>
-</div>
-<div class="frame">
-<img alt="Scrapbook Y2K" src="scrapbook.jpg"/>
-<div class="title">Scrapbook Y2K</div>
-<div class="description">Estresse em glitter. Emoções coladas com corações.</div>
-</div>
-<div class="frame">
-<img alt="Sitcom estilo The Office" src="sitcom.jpg"/>
-<div class="title">Sitcom estilo The Office</div>
-<div class="description">Alguém engasgou com a planilha.</div>
-</div>
-<div class="frame">
-<img alt="Infográfico corporativo maluco" src="infografico.jpg"/>
-<div class="title">Infográfico corporativo maluco</div>
-<div class="description">KPI grita. Gráfico foge da página.</div>
-</div>
-<div class="frame">
-<img alt="Livro infantil macabro" src="infantilmacabro.jpg"/>
-<div class="title">Livro infantil macabro</div>
-<div class="description">Uma sala estranha. O clima azedo.</div>
-</div>
-<div class="frame">
-<img alt="Reality show corporativo" src="reality.jpg"/>
-<div class="title">Reality show corporativo</div>
-<div class="description">A tensão é roteirizada. A esperança é comercial.</div>
-</div>
-<div class="spacer"></div>
-<audio autoplay="" controls="" id="background-audio" loop="">
-<source src="trilha.mp3" type="audio/mpeg"/>
-  Seu navegador não suporta áudio embutido.
+
+<audio id="background-audio" controls autoplay loop>
+  <source src="trilha.mp3" type="audio/mpeg">
 </audio>
-<style>
-  audio {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
-    width: 250px;
-    opacity: 0.85;
-  }
-</style>
-<button id="toggle-audio-btn" onclick="toggleAudio()">🔇</button>
+<button onclick="toggleAudio()" id="toggle-audio-btn">🔇</button>
 <script>
   const audio = document.getElementById('background-audio');
   const btn = document.getElementById('toggle-audio-btn');
-
   function toggleAudio() {
     if (audio.paused) {
       audio.play();
@@ -147,20 +231,6 @@
     }
   }
 </script>
-<style>
-  #toggle-audio-btn {
-    position: fixed;
-    bottom: 80px;
-    left: 20px;
-    z-index: 1001;
-    padding: 8px 12px;
-    font-size: 20px;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0.85;
-  }
-</style>
+
 </body>
 </html>
